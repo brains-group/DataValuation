@@ -1,0 +1,438 @@
+tid,ttid,did,name,task_type,status,estimation_procedure,evaluation_measures,source_data,target_feature,MajorityClassSize,MaxNominalAttDistinctValues,MinorityClassSize,NumberOfClasses,NumberOfFeatures,NumberOfInstances,NumberOfInstancesWithMissingValues,NumberOfMissingValues,NumberOfNumericFeatures,NumberOfSymbolicFeatures,number_samples,cost_matrix,quality_measure,target_value,dataset_id
+2,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+62,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+232,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,33% Holdout set,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+1701,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+1766,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+1882,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+1945,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,Leave one out,predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+2170,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,2,anneal,Supervised Data Stream Classification,active,Interleaved Test then Train,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+7286,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,10-fold Crossvalidation,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,"[[0,1,2]]",,,2
+52951,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Cortana Quality,1,2
+52952,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Information gain,1,2
+52953,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Binomial test,1,2
+52954,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Jaccard,1,2
+52955,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Cortana Quality,2,2
+52956,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Information gain,2,2
+52957,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Binomial test,2,2
+52958,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Jaccard,2,2
+52959,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Cortana Quality,3,2
+52960,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Information gain,3,2
+52961,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Binomial test,3,2
+52962,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Jaccard,3,2
+52967,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Cortana Quality,5,2
+52968,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Information gain,5,2
+52969,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Binomial test,5,2
+52970,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Jaccard,5,2
+52971,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Cortana Quality,U,2
+52972,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Information gain,U,2
+52973,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Binomial test,U,2
+52974,TaskType.SUBGROUP_DISCOVERY,2,anneal,Subgroup Discovery,active,,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,Jaccard,U,2
+126033,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+145952,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,10-fold Crossvalidation,precision,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+146250,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+146899,TaskType.CLUSTERING,2,anneal,Clustering,active,,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+167220,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+167578,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+167936,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+168351,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+168921,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+189359,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+190428,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+211251,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+212102,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+233090,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,20% Holdout (Ordered),predictive_accuracy,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+233217,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+254307,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+254314,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+296490,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+317617,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+338772,TaskType.CLUSTERING,2,anneal,Clustering,active,50 times Clustering,,2,,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+360136,TaskType.LEARNING_CURVE,2,anneal,Learning Curve,active,10-fold Learning Curve,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,9,,,,2
+360953,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,10-fold Crossvalidation,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+361624,TaskType.SUPERVISED_CLASSIFICATION,2,anneal,Supervised Classification,active,4-fold Crossvalidation,,2,class,684.0,7.0,8.0,5,39,898,898,22175,6,33,,,,,2
+3,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10-fold Crossvalidation,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+63,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+233,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,33% Holdout set,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+1702,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+1767,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+1883,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+2171,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,3,kr-vs-kp,Supervised Data Stream Classification,active,Interleaved Test then Train,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+52975,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Cortana Quality,won,3
+52976,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Information gain,won,3
+52977,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Binomial test,won,3
+52978,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Jaccard,won,3
+52979,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Cortana Quality,nowin,3
+52980,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Information gain,nowin,3
+52981,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Binomial test,nowin,3
+52982,TaskType.SUBGROUP_DISCOVERY,3,kr-vs-kp,Subgroup Discovery,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,Jaccard,nowin,3
+126034,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+145953,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10-fold Crossvalidation,precision,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+146251,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+146697,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+146900,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+167149,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,33% Holdout set,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+167221,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+167579,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+167937,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+168352,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+168922,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+189360,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+190401,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10% Holdout set,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+190429,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+211252,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+212103,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+233091,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,20% Holdout (Ordered),predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+233218,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+254308,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+254316,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+296491,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+317602,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,33% Holdout set,area_under_roc_curve,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+317618,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+338773,TaskType.CLUSTERING,3,kr-vs-kp,Clustering,active,50 times Clustering,,3,,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+359965,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+360137,TaskType.LEARNING_CURVE,3,kr-vs-kp,Learning Curve,active,10-fold Learning Curve,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,12,,,,3
+361481,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,4-fold Crossvalidation,,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+361691,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10-fold Crossvalidation,area_under_roc_curve,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+361692,TaskType.SUPERVISED_CLASSIFICATION,3,kr-vs-kp,Supervised Classification,active,10-fold Crossvalidation,f_measure,3,class,1669.0,3.0,1527.0,2,37,3196,0,0,0,37,,,,,3
+4,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+64,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+234,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,33% Holdout set,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+1703,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+1768,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+1884,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+1946,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,Leave one out,predictive_accuracy,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+2172,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,4,labor,Supervised Data Stream Classification,active,Interleaved Test then Train,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+126035,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+145954,TaskType.SUPERVISED_CLASSIFICATION,4,labor,Supervised Classification,active,10-fold Crossvalidation,precision,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+146252,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+146901,TaskType.CLUSTERING,4,labor,Clustering,active,,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+167222,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+167580,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+167938,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+168353,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+168923,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+189361,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+190430,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+211253,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+212104,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+233219,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+254309,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+254318,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+296492,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+317619,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+338774,TaskType.CLUSTERING,4,labor,Clustering,active,50 times Clustering,,4,,37.0,3.0,20.0,2,17,57,56,326,8,9,,,,,4
+360138,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+360952,TaskType.LEARNING_CURVE,4,labor,Learning Curve,active,10-fold Learning Curve,jaccard,4,class,37.0,3.0,20.0,2,17,57,56,326,8,9,1,,,,4
+5,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+65,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+235,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,33% Holdout set,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+1704,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+1769,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+1885,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+1947,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,Leave one out,predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+2173,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,5,arrhythmia,Supervised Data Stream Classification,active,Interleaved Test then Train,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+126036,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+145955,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,10-fold Crossvalidation,precision,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+146253,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+146902,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+167223,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+167581,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+167939,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+168354,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+168924,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+189362,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+190431,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+211254,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+212105,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+233092,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,20% Holdout (Ordered),predictive_accuracy,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+233204,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10 times 10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+233205,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10 times 10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+233220,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+254310,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+254320,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+296493,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+317620,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+338775,TaskType.CLUSTERING,5,arrhythmia,Clustering,active,50 times Clustering,,5,,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+360139,TaskType.LEARNING_CURVE,5,arrhythmia,Learning Curve,active,10-fold Learning Curve,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,7,,,,5
+361625,TaskType.SUPERVISED_CLASSIFICATION,5,arrhythmia,Supervised Classification,active,4-fold Crossvalidation,,5,class,245.0,13.0,2.0,13,280,452,384,408,206,74,,,,,5
+6,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,10-fold Crossvalidation,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+236,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,33% Holdout set,predictive_accuracy,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+1705,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+1770,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+1886,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+2174,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,6,letter,Supervised Data Stream Classification,active,Interleaved Test then Train,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+52983,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,A,6
+52984,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,A,6
+52985,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,A,6
+52986,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,A,6
+52987,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,B,6
+52988,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,B,6
+52989,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,B,6
+52990,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,B,6
+52991,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,C,6
+52992,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,C,6
+52993,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,C,6
+52994,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,C,6
+52995,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,D,6
+52996,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,D,6
+52997,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,D,6
+52998,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,D,6
+52999,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,E,6
+53000,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,E,6
+53001,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,E,6
+53002,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,E,6
+53003,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,F,6
+53004,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,F,6
+53005,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,F,6
+53006,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,F,6
+53007,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,G,6
+53008,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,G,6
+53009,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,G,6
+53010,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,G,6
+53011,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,H,6
+53012,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,H,6
+53013,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,H,6
+53014,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,H,6
+53015,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,I,6
+53016,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,I,6
+53017,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,I,6
+53018,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,I,6
+53019,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,J,6
+53020,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,J,6
+53021,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,J,6
+53022,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,J,6
+53023,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,K,6
+53024,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,K,6
+53025,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,K,6
+53026,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,K,6
+53027,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,L,6
+53028,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,L,6
+53029,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,L,6
+53030,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,L,6
+53031,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,M,6
+53032,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,M,6
+53033,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,M,6
+53034,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,M,6
+53035,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,N,6
+53036,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,N,6
+53037,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,N,6
+53038,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,N,6
+53039,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,O,6
+53040,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,O,6
+53041,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,O,6
+53042,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,O,6
+53043,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,P,6
+53044,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,P,6
+53045,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,P,6
+53046,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,P,6
+53047,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,Q,6
+53048,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,Q,6
+53049,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,Q,6
+53050,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,Q,6
+53051,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,R,6
+53052,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,R,6
+53053,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,R,6
+53054,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,R,6
+53055,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,S,6
+53056,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,S,6
+53057,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,S,6
+53058,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,S,6
+53059,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,T,6
+53060,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,T,6
+53061,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,T,6
+53062,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,T,6
+53063,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,U,6
+53064,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,U,6
+53065,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,U,6
+53066,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,U,6
+53067,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,V,6
+53068,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,V,6
+53069,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,V,6
+53070,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,V,6
+53071,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,W,6
+53072,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,W,6
+53073,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,W,6
+53074,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,W,6
+53075,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,X,6
+53076,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,X,6
+53077,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,X,6
+53078,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,X,6
+53079,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,Y,6
+53080,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,Y,6
+53081,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,Y,6
+53082,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,Y,6
+53083,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Cortana Quality,Z,6
+53084,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Information gain,Z,6
+53085,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Binomial test,Z,6
+53086,TaskType.SUBGROUP_DISCOVERY,6,letter,Subgroup Discovery,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,Jaccard,Z,6
+126037,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+145956,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,10-fold Crossvalidation,precision,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+146254,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+146698,TaskType.CLUSTERING,6,letter,Clustering,active,,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+146903,TaskType.CLUSTERING,6,letter,Clustering,active,,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+167150,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,33% Holdout set,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+167224,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+167582,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+167940,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+168355,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+168925,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+189363,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+190432,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+211255,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+212106,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+233221,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+254311,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+254322,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+296494,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+317621,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+338776,TaskType.CLUSTERING,6,letter,Clustering,active,50 times Clustering,,6,,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+360140,TaskType.LEARNING_CURVE,6,letter,Learning Curve,active,10-fold Learning Curve,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,18,,,,6
+361411,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,5 times 2-fold Crossvalidation,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+361482,TaskType.SUPERVISED_CLASSIFICATION,6,letter,Supervised Classification,active,4-fold Crossvalidation,,6,class,813.0,26.0,734.0,26,17,20000,0,0,16,1,,,,,6
+7,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+66,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+237,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,33% Holdout set,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+1706,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+1771,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+1887,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+1948,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,Leave one out,predictive_accuracy,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+2175,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,7,audiology,Supervised Data Stream Classification,active,Interleaved Test then Train,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+126038,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+145957,TaskType.SUPERVISED_CLASSIFICATION,7,audiology,Supervised Classification,active,10-fold Crossvalidation,precision,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+146255,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+146904,TaskType.CLUSTERING,7,audiology,Clustering,active,,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+167225,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+167583,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+167941,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+168356,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+168926,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+189364,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+190433,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+211256,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+212107,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+233222,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+254313,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+254324,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+296495,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+317622,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+338777,TaskType.CLUSTERING,7,audiology,Clustering,active,50 times Clustering,,7,,57.0,24.0,1.0,24,70,226,222,317,0,70,,,,,7
+360141,TaskType.LEARNING_CURVE,7,audiology,Learning Curve,active,10-fold Learning Curve,,7,class,57.0,24.0,1.0,24,70,226,222,317,0,70,5,,,,7
+8,TaskType.SUPERVISED_CLASSIFICATION,8,liver-disorders,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+67,TaskType.LEARNING_CURVE,8,liver-disorders,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,6,,,,8
+238,TaskType.SUPERVISED_CLASSIFICATION,8,liver-disorders,Supervised Classification,active,33% Holdout set,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+1707,TaskType.LEARNING_CURVE,8,liver-disorders,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,6,,,,8
+1772,TaskType.SUPERVISED_CLASSIFICATION,8,liver-disorders,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+1888,TaskType.SUPERVISED_CLASSIFICATION,8,liver-disorders,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+1949,TaskType.SUPERVISED_CLASSIFICATION,8,liver-disorders,Supervised Classification,active,Leave one out,predictive_accuracy,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+2176,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,8,liver-disorders,Supervised Data Stream Classification,active,Interleaved Test then Train,,8,selector,,,,0,6,345,0,0,6,0,,,,,8
+52948,TaskType.SUPERVISED_REGRESSION,8,liver-disorders,Supervised Regression,active,10-fold Crossvalidation,root_mean_squared_error,8,drinks,,,,0,6,345,0,0,6,0,,,,,8
+126039,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+146905,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,,,8,,,,,0,6,345,0,0,6,0,,,,,8
+168927,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+190434,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+211690,TaskType.SUPERVISED_REGRESSION,8,liver-disorders,Supervised Regression,active,33% Holdout set,root_mean_squared_error,8,drinks,,,,0,6,345,0,0,6,0,,,,,8
+211837,TaskType.SUPERVISED_REGRESSION,8,liver-disorders,Supervised Regression,active,10-fold Crossvalidation,mean_absolute_error,8,drinks,,,,0,6,345,0,0,6,0,,,,,8
+212108,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+233223,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+254315,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+254326,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+296496,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+317623,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+338778,TaskType.CLUSTERING,8,liver-disorders,Clustering,active,50 times Clustering,,8,,,,,0,6,345,0,0,6,0,,,,,8
+9,TaskType.SUPERVISED_CLASSIFICATION,9,autos,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+68,TaskType.LEARNING_CURVE,9,autos,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,5,,,,9
+239,TaskType.SUPERVISED_CLASSIFICATION,9,autos,Supervised Classification,active,33% Holdout set,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+1708,TaskType.LEARNING_CURVE,9,autos,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,5,,,,9
+1773,TaskType.SUPERVISED_CLASSIFICATION,9,autos,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+1889,TaskType.SUPERVISED_CLASSIFICATION,9,autos,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+1950,TaskType.SUPERVISED_CLASSIFICATION,9,autos,Supervised Classification,active,Leave one out,predictive_accuracy,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+2177,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,9,autos,Supervised Data Stream Classification,active,Interleaved Test then Train,,9,symboling,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+126040,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+146906,TaskType.CLUSTERING,9,autos,Clustering,active,,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+168928,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+190416,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,a,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+190435,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+212109,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+233224,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+254317,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+254328,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+296497,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+317624,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+338779,TaskType.CLUSTERING,9,autos,Clustering,active,50 times Clustering,,9,,67.0,22.0,3.0,6,26,205,46,59,15,11,,,,,9
+10,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,10-fold Crossvalidation,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+69,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+240,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,33% Holdout set,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+1709,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+1774,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+1890,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+1951,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,Leave one out,predictive_accuracy,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+2178,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,10,lymph,Supervised Data Stream Classification,active,Interleaved Test then Train,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+126041,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+145958,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,10-fold Crossvalidation,precision,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+146256,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+146907,TaskType.CLUSTERING,10,lymph,Clustering,active,,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+167226,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+167584,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+167942,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+168357,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+168929,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+189365,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+190436,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+211257,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+212110,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+233225,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+254319,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+254330,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+296498,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+317625,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+338780,TaskType.CLUSTERING,10,lymph,Clustering,active,50 times Clustering,,10,,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+360142,TaskType.LEARNING_CURVE,10,lymph,Learning Curve,active,10-fold Learning Curve,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,4,,,,10
+361143,TaskType.SUPERVISED_CLASSIFICATION,10,lymph,Supervised Classification,active,10-fold Crossvalidation,,10,class,81.0,8.0,2.0,4,19,148,0,0,3,16,,,,,10
+11,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,10-fold Crossvalidation,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+70,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10 times 10-fold Learning Curve,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+241,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,33% Holdout set,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+1710,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+1775,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,5 times 2-fold Crossvalidation,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+1891,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,10 times 10-fold Crossvalidation,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+1952,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,Leave one out,predictive_accuracy,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+2179,TaskType.SUPERVISED_DATASTREAM_CLASSIFICATION,11,balance-scale,Supervised Data Stream Classification,active,Interleaved Test then Train,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+53087,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Cortana Quality,L,11
+53088,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Information gain,L,11
+53089,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Binomial test,L,11
+53090,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Jaccard,L,11
+53091,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Cortana Quality,B,11
+53092,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Information gain,B,11
+53093,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Binomial test,B,11
+53094,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Jaccard,B,11
+53095,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Cortana Quality,R,11
+53096,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Information gain,R,11
+53097,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Binomial test,R,11
+53098,TaskType.SUBGROUP_DISCOVERY,11,balance-scale,Subgroup Discovery,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,Jaccard,R,11
+126042,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+145959,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,10-fold Crossvalidation,precision,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+146257,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+146699,TaskType.CLUSTERING,11,balance-scale,Clustering,active,,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+146908,TaskType.CLUSTERING,11,balance-scale,Clustering,active,,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+167151,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,33% Holdout set,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+167227,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+167585,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+167943,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+168358,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+168783,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,100 times 10-fold Crossvalidation,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+168930,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+189366,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+190437,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+211258,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+212111,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+233226,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+254321,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+254332,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+296499,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+317626,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+338781,TaskType.CLUSTERING,11,balance-scale,Clustering,active,50 times Clustering,,11,,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+360143,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+360910,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,pattern_team_auroc10,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+360911,TaskType.LEARNING_CURVE,11,balance-scale,Learning Curve,active,10-fold Learning Curve,pattern_team_auroc10,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,8,,,,11
+361412,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,5 times 2-fold Crossvalidation,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
+361483,TaskType.SUPERVISED_CLASSIFICATION,11,balance-scale,Supervised Classification,active,4-fold Crossvalidation,,11,class,288.0,3.0,49.0,3,5,625,0,0,4,1,,,,,11
