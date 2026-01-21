@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dataset-level Meta-Learning for Label Noise Detector Selection V3
+Dataset-level Meta-Learning for Label Noise Detector Selection (with Cross Validation)
 """
 
 from __future__ import annotations
@@ -220,7 +220,6 @@ def inject_fringe_noise(X, y, noise, random_state=42):
     y2 = y.copy()
     n_flip = int(len(y) * noise)
 
-    # ---- 1. Train probabilistic classifier ----
     clf = LogisticRegression(
         max_iter=1000, multi_class="auto", n_jobs=1
     )
@@ -228,11 +227,7 @@ def inject_fringe_noise(X, y, noise, random_state=42):
 
     probs = clf.predict_proba(Xs)
     true_class_probs = probs[np.arange(len(y)), y]
-
-    # ---- 2. Pick boundary (low-confidence) points ----
     fringe_idx = np.argsort(true_class_probs)[:n_flip]
-
-    # ---- 3. Flip to closest competing class ----
     classes = np.unique(y)
 
     for i in fringe_idx:
@@ -321,84 +316,114 @@ def generate_samples(datasets, noise_levels):
         names,
     )
 
+# ---------------------------------------------------------------------
+# Cache dataset descriptors
+# ---------------------------------------------------------------------
+def build_meta_dataset(datasets, noise_levels):
+    X_meta = []
+    Y_meta = []
+    dataset_ids = []
+    detector_names = [d.name for d in registry.get_enabled()]
+
+    for ds_idx, ds in enumerate(datasets):
+        X, y = ds["X"], ds["y"]
+        desc = compute_dataset_descriptor(X, y)
+
+        for noise in noise_levels:
+            y_n, flips = inject_fringe_noise(X, y, noise)
+            scores = registry.run_all(X, y_n)
+
+            aucs = [
+                auc_flip_detection(scores[name], flips, len(y))
+                for name in detector_names
+            ]
+
+            X_meta.append(desc)
+            Y_meta.append(aucs)
+            dataset_ids.append(ds_idx)
+
+    return (
+        torch.tensor(X_meta, dtype=torch.float32),
+        torch.tensor(Y_meta, dtype=torch.float32),
+        np.array(dataset_ids),
+        detector_names,
+    )
+
 
 # ---------------------------------------------------------------------
 # Training
 # ---------------------------------------------------------------------
-def train_meta_model(
-    datasets,
-    noise_levels=(0.05, 0.1, 0.2),
+def train_meta_model_loocv_fast(
+    X_meta,
+    Y_meta,
+    dataset_ids,
+    detector_names,
+    num_datasets,
     epochs=150,
     lr=1e-3,
     patience=20,
     min_delta=1e-4,
 ):
-    random.shuffle(datasets)
-    split = int(0.8 * len(datasets))
-    tr, va = datasets[:split], datasets[split:]
+    models = []
 
-    Xtr, Ytr, names = generate_samples(tr, noise_levels)
-    Xva, Yva, _ = generate_samples(va, noise_levels)
+    for held_out in range(num_datasets):
+        print(f"\n=== LOOCV fold (held out dataset {held_out}) ===")
 
-    model = DatasetMetaModel(Xtr.shape[1], Ytr.shape[1]).to(DEVICE)
-    opt = torch.optim.Adam(model.parameters(), lr=lr)
+        train_mask = dataset_ids != held_out
+        val_mask = dataset_ids == held_out
 
-    best = float("inf")
-    patience_ctr = 0
+        Xtr, Ytr = X_meta[train_mask], Y_meta[train_mask]
+        Xva, Yva = X_meta[val_mask], Y_meta[val_mask]
 
-    for e in range(epochs):
-        # ---- Train ----
-        model.train()
-        opt.zero_grad()
-        loss = pairwise_ranking_loss(
-            model(Xtr.to(DEVICE)),
-            Ytr.to(DEVICE)
-        )
-        loss.backward()
-        opt.step()
+        model = DatasetMetaModel(Xtr.shape[1], Ytr.shape[1]).to(DEVICE)
+        opt = torch.optim.Adam(model.parameters(), lr=lr)
 
-        # ---- Validate ----
-        model.eval()
-        with torch.no_grad():
-            val = pairwise_ranking_loss(
-                model(Xva.to(DEVICE)),
-                Yva.to(DEVICE)
+        best = float("inf")
+        patience_ctr = 0
+
+        for e in range(epochs):
+            model.train()
+            opt.zero_grad()
+            loss = pairwise_ranking_loss(
+                model(Xtr.to(DEVICE)),
+                Ytr.to(DEVICE)
             )
+            loss.backward()
+            opt.step()
 
-        if e % 20 == 0:
-            print(
-                f"Epoch {e:03d} | "
-                f"train {loss:.4f} | val {val:.4f} | "
-                f"best {best:.4f}"
-            )
+            model.eval()
+            with torch.no_grad():
+                val = pairwise_ranking_loss(
+                    model(Xva.to(DEVICE)),
+                    Yva.to(DEVICE)
+                )
 
-        # ---- Early stopping logic ----
-        if val < best - min_delta:
-            best = val
-            patience_ctr = 0
-            torch.save(
-                {
-                    "model": model.state_dict(),
-                    "detectors": names,
-                },
-                "models/meta_ranker.pth",
-            )
-        else:
-            patience_ctr += 1
+            if val < best - min_delta:
+                best = val
+                patience_ctr = 0
+                torch.save(
+                    {
+                        "model": model.state_dict(),
+                        "detectors": detector_names,
+                        "held_out": held_out,
+                    },
+                    f"models/meta_ranker_loocv_{held_out}.pth",
+                )
+            else:
+                patience_ctr += 1
 
-        if patience_ctr >= patience:
-            print(
-                f"\nEarly stopping at epoch {e} "
-                f"(best val loss = {best:.4f})"
-            )
-            break
+            if patience_ctr >= patience:
+                break
 
-    return model
+        models.append(model)
+
+    return models
+
 
 
 
 # ---------------------------------------------------------------------
-# Benchmark (includes Cleanlab)
+# Benchmark (vs Cleanlab)
 # ---------------------------------------------------------------------
 def benchmark(model, datasets, noise_levels):
     rows = []
@@ -444,7 +469,7 @@ def benchmark(model, datasets, noise_levels):
             rows.append(row)
 
     df = pd.DataFrame(rows)
-    df.to_csv("results/meta_ranker_results.csv", index=False)
+    df.to_csv("results/meta_ranker_results_v4.csv", index=False)
     return df
 
 
@@ -492,13 +517,29 @@ def load_datasets_fast(max_tasks=300, max_samples=1200):
 # Main
 # ---------------------------------------------------------------------
 def main():
-    datasets = load_datasets_fast()
-    model = train_meta_model(datasets)
-    df = benchmark(model, datasets, noise_levels=(0.1, 0.2))
+    datasets = load_datasets_fast(max_tasks=200)
 
-    print("\n=== Average Hit Rates ===")
-    print(df.groupby("noise")[["meta", "cleanlab"]].mean().round(3))
-    print("\nSaved to results/meta_ranker_results.csv")
+    noise_levels = (0.05, 0.1, 0.2)
+
+    print("\nPrecomputing meta-dataset...")
+    X_meta, Y_meta, dataset_ids, detector_names = build_meta_dataset(
+        datasets, noise_levels
+    )
+
+    print("Training LOOCV meta-models...")
+    models = train_meta_model_loocv_fast(
+        X_meta,
+        Y_meta,
+        dataset_ids,
+        detector_names,
+        num_datasets=len(datasets),
+    )
+
+    # Example: evaluate using last model
+    df = benchmark(models[-1], datasets, noise_levels=(0.1, 0.2))
+
+    print(df.groupby("noise")[["meta", "cleanlab"]].mean())
+
 
 
 if __name__ == "__main__":
